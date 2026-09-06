@@ -1,13 +1,30 @@
-# RandomForestClassifier
-Random Forest Classifier
+# Random Forest Classifier
 
-Simple Random Forest Classifier in python. The sklearn.ensemble library was used to import the RandomForestClassifier class. The object of the class was created. The following arguments was passed initally to the object:
+A Python machine learning project using a Random Forest Classifier to predict whether users will purchase a product based on their age and estimated salary.
 
- - n_estimators = 10
- - criterion = 'entropy'
+## Project Overview
 
-The inital model was only given 10 decision tree, which resulted in a total of 10 incorrect prediction. Once the model was fitted with more the decision trees the number of incorrect prediction grew less.
+The project uses the Social Network Ads dataset to train a Random Forest classification model.
 
-It was found that a the optimal number of decision trees for this models to predict the answers was 200 decision trees. Hence the n_estimator argument was given a final value of 200.
+The dataset is split into training and test sets, and feature scaling is applied before training the model.
 
-Anything more that 200 will result in over-fitting and will lead further incorrect prediction.
+The Random Forest model uses 200 decision trees with the entropy criterion.
+
+## Technologies
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+
+## Machine Learning Process
+
+1. Load the dataset.
+2. Select Age and Estimated Salary as features.
+3. Split the data into training and test sets.
+4. Apply feature scaling.
+5. Train the Random Forest Classifier.
+6. Predict the test set results.
+7. Evaluate the model using a confusion matrix.
+8. Visualize the training and test set results.
